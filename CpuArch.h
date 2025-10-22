@@ -27,7 +27,7 @@
 
 
 /******************************************************************************
-** When compiling or setting up a build for a specific environment, 
+** When compiling or setting up a build for a specific environment,
 ** you can explicitly add a macro if this predefined macro does not exist.
 **
 ** (e.g., -D__6502__).
@@ -53,7 +53,7 @@
     defined(__APPLE2__) || defined(__ATARI__) || \
     defined(__NES__) || defined(__VIC20__) || \
     defined(__GEOS__) || defined(__LYNX__) || \
-    defined(__CX16__)
+    defined(__CX16__) || defined(__SDCC_mos6502)
  #define CPU_ARCH                       CPU_ARCH_6502
  #define CPU_ARCH_NAME                  CPU_ARCH_6502_NAME
 #endif
@@ -356,7 +356,7 @@
    #define CPU_ARCH                     CPU_ARCH_INTELX86_32
    #define CPU_ARCH_NAME                CPU_ARCH_INTELX86_32_NAME
   #endif
- #else 
+ #else
   /* standard 32bit */
   #define CPU_ARCH                      CPU_ARCH_INTELX86_32
   #define CPU_ARCH_NAME                 CPU_ARCH_INTELX86_32_NAME
@@ -685,7 +685,7 @@
 #define CPU_ARCH_ZILOGZ180              CPU_ARCH_TMS470 + 1
 #define CPU_ARCH_ZILOGZ180_NAME         "Zilog Z180"
 
-#if defined(__Z180) || defined(__Z180__) || defined(__z180__)
+#if defined(__Z180) || defined(__Z180__) || defined(__z180__) || defined(__SDCC_z180)
  #define CPU_ARCH                       CPU_ARCH_ZILOGZ180
  #define CPU_ARCH_NAME                  CPU_ARCH_ZILOGZ180_NAME
 #endif

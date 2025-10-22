@@ -56,3 +56,8 @@ Another example of use
 It is completely impossible to fully test all cpu architecture combinations, 
 so this library is not fully tested. If you have any improvements, 
 please feel free to contact me at ignacko.com@outlook.com
+
+
+# Updates
+2025 10 22 __SDCC_z180 added
+2025 10 22 __SDCC_mos6502 added
