@@ -95,12 +95,18 @@
 
 
 /******************************************************************************
-** Arm32
+** Arm32 & Arm64
 */
 #define CPU_ARCH_ARM32                  CPU_ARCH_AMD64 + 1
 #define CPU_ARCH_ARM32_NAME             "Arm32"
 
-#if defined(__arm) || defined(__arm__) || \
+#define CPU_ARCH_ARM64                  CPU_ARCH_ARM32 + 1
+#define CPU_ARCH_ARM64_NAME             "Arm64"
+
+#if defined(__aarch64__) || defined(_M_ARM64)
+ #define CPU_ARCH                       CPU_ARCH_ARM64
+ #define CPU_ARCH_NAME                  CPU_ARCH_ARM64_NAME
+#elif defined(__arm) || defined(__arm__) || \
     defined(__thumb__) || defined(__TARGET_ARCH_ARM) || \
     defined(__TARGET_ARCH_THUMB) || defined(_ARM) || \
     defined(_M_ARM) || defined(_M_ARMT) || defined(__CA__) || \
@@ -111,18 +117,6 @@
     defined(__ARMEL__) || defined(__ARMEB__)
  #define CPU_ARCH                       CPU_ARCH_ARM32
  #define CPU_ARCH_NAME                  CPU_ARCH_ARM32_NAME
-#endif
-
-
-/******************************************************************************
-** Arm64
-*/
-#define CPU_ARCH_ARM64                  CPU_ARCH_ARM32 + 1
-#define CPU_ARCH_ARM64_NAME             "Arm64"
-
-#if defined(__aarch64__) || defined(_M_ARM64)
- #define CPU_ARCH                       CPU_ARCH_ARM64
- #define CPU_ARCH_NAME                  CPU_ARCH_ARM64_NAME
 #endif
 
 
