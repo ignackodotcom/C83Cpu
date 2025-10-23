@@ -73,7 +73,6 @@
 #define CPU_ARCH_ALPHA_NAME             "Alpha"
 
 #if defined(__alpha) || defined(__alpha__) || defined(_M_ALPHA) || \
-    defined(__alpha_ev4__) || defined(__alpha_ev5__) || defined(__alpha_ev6__) || \
     defined(__archalpha) || defined(__archalpha__)
  #define CPU_ARCH                       CPU_ARCH_ALPHA
  #define CPU_ARCH_NAME                  CPU_ARCH_ALPHA_NAME
@@ -110,10 +109,8 @@
     defined(__thumb__) || defined(__TARGET_ARCH_ARM) || \
     defined(__TARGET_ARCH_THUMB) || defined(_ARM) || \
     defined(_M_ARM) || defined(_M_ARMT) || defined(__CA__) || \
-    defined(__ARM_ARCH) || defined(__ARM_ARCH_6__) || defined(__ARM_ARCH_7__) || \
-    defined(__ARM_ARCH_8__) || defined(__ARM_EABI_) || defined(__ARM_ARCH_ISA_ARM) || \
-    defined(__ARM_ARCH_ISA_THUMB) || defined(__ARM_ARCH_7A__) || defined(__ARM_ARCH_6M__) || \
-    defined(__ARM_ARCH_7M__) || defined(__ARM_ARCH_7EM__) || \
+    defined(__ARM_ARCH) || defined(__ARM_EABI_) || defined(__ARM_ARCH_ISA_ARM) || \
+    defined(__ARM_ARCH_ISA_THUMB) || \
     defined(__ARMEL__) || defined(__ARMEB__)
  #define CPU_ARCH                       CPU_ARCH_ARM32
  #define CPU_ARCH_NAME                  CPU_ARCH_ARM32_NAME
@@ -260,21 +257,9 @@
 ******************************************************************************/
 
 /******************************************************************************
-** Intel IA-32
-*/
-#define CPU_ARCH_IA32                   CPU_ARCH_HPPARISC + 1
-#define CPU_ARCH_IA32_NAME              "Intel IA-32"
-
-#if defined(__IA32__)
- #define CPU_ARCH                       CPU_ARCH_IA32
- #define CPU_ARCH_NAME                  CPU_ARCH_IA32_NAME
-#endif
-
-
-/******************************************************************************
 ** Intel Itanium IA-64
 */
-#define CPU_ARCH_IA64                   CPU_ARCH_IA32 + 1
+#define CPU_ARCH_IA64                   CPU_ARCH_HPPARISC + 1
 #define CPU_ARCH_IA64_NAME              "Intel Itanium IA-64"
 
 #if defined(__ia64__) || defined(_IA64) || defined(__IA64__) || \
@@ -337,7 +322,7 @@
     defined(__i486__) || defined(__i586__) || defined(__i686__) || \
     defined(_M_IX86) || defined(__X86__)  || defined(_X86_) || \
     defined(__THW_INTEL__) || defined(__I86__) || defined(__INTEL__) || \
-    defined(__386)
+    defined(__386) || defined(__IA32__)
  #if defined(_M_IX86)
   #if defined(__WATCOMC__)
    #if defined(__386__) || defined(_M_I386)
@@ -569,7 +554,7 @@
 #define CPU_ARCH_SPARC                  CPU_ARCH_RS6000 + 1
 #define CPU_ARCH_SPARC_NAME             "Sparc"
 
-#if defined(__sparc__) || defined(__sparc) || defined(__sparcv8) || defined(__sparcv9)
+#if defined(__sparc__) || defined(__sparc)
  #define CPU_ARCH                       CPU_ARCH_SPARC
  #define CPU_ARCH_NAME                  CPU_ARCH_SPARC_NAME
 #endif

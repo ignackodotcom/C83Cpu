@@ -62,3 +62,9 @@ please feel free to contact me at ignacko.com@outlook.com
 2025 10 22 __SDCC_z180 added<br>
 2025 10 22 __SDCC_mos6502 added<br>
 2025 10 22 Arm32 and Arm64 bug fixed<br>
+<br>
+2025 10 23 Alpha bug fixed<br>
+2025 10 23 Arm32 bug fixed<br>
+2025 10 23 __IA32__ bug fixed<br>
+2025 10 23 Sparc bug fixed<br>
+<br>
