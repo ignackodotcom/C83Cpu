@@ -1,4 +1,4 @@
-# C83Ascii
+# C83Cpu
 
 3rd edition of the library
 
@@ -55,7 +55,7 @@ Another example of use
 # Note:
 It is completely impossible to fully test all cpu architecture combinations, 
 so this library is not fully tested. If you have any improvements, 
-please feel free to contact me at ignacko.com@outlook.com
+please feel free to contact me.
 
 
 # Updates
@@ -68,3 +68,4 @@ please feel free to contact me at ignacko.com@outlook.com
 2025 10 23 __IA32__ bug fixed<br>
 2025 10 23 Sparc bug fixed<br>
 <br>
+
