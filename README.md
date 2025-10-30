@@ -1,12 +1,12 @@
 # C83Cpu
 
+## Cpu architecture identification macros
+
 3rd edition of the library
 
 part of the C83Project<br>
 support for 8.3 file naming conventions with the exception of the main include and code files<br>
 support C89 and higher editions<br>
-
-cpu architecture identification macros
 
 <br>
 
@@ -68,4 +68,5 @@ please feel free to contact me.
 2025 10 23 __IA32__ bug fixed<br>
 2025 10 23 Sparc bug fixed<br>
 <br>
-
+2025 10 30 CpuArch.h renamed to PCpuArch.h<br>
+<br>
