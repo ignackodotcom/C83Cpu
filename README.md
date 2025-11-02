@@ -70,3 +70,5 @@ please feel free to contact me.
 <br>
 2025 10 30 CpuArch.h renamed to PCpuArch.h<br>
 <br>
+2025 11 02 Detailed description<br>
+<br>
