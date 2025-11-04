@@ -72,3 +72,5 @@ please feel free to contact me.
 <br>
 2025 11 02 Detailed description<br>
 <br>
+2025 11 04 6502 bug fixed<br>
+<br>

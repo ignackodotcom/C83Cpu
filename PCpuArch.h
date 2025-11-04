@@ -47,13 +47,7 @@
 #define CPU_ARCH_6502                   1
 #define CPU_ARCH_6502_NAME              "6502"
 
-#if defined(__CC65__) || defined(__6502__) || \
-    defined(__C64__) || defined(__C128__) || \
-    defined(__CBM510__) || defined(__PET__) || \
-    defined(__APPLE2__) || defined(__ATARI__) || \
-    defined(__NES__) || defined(__VIC20__) || \
-    defined(__GEOS__) || defined(__LYNX__) || \
-    defined(__CX16__) || defined(__SDCC_mos6502)
+#if defined(__CC65__) || defined(__6502__) || defined(__SDCC_mos6502)
  #define CPU_ARCH                       CPU_ARCH_6502
  #define CPU_ARCH_NAME                  CPU_ARCH_6502_NAME
 #endif
